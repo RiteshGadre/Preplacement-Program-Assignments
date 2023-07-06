@@ -1,0 +1,11 @@
+Q.3 What is VW/VH ?
+Ans: 
+VW (Viewport Width) and VH (Viewport Height) are relative units of measurement in CSS that represent a percentage of the viewport dimensions. They are used to size elements based on the size of the browser window.
+1. VW (Viewport Width): VW represents a percentage of the width of the viewport (the visible area of the browser window). For example, 1vw is equal to 1% of the viewport width. It allows you to size elements relative to the width of the viewport. If the viewport width changes, elements sized with VW will automatically adjust their size accordingly.
+2. VH (Viewport Height): VH represents a percentage of the height of the viewport. Similar to VW, 1vh is equal to 1% of the viewport height. VH is used to size elements relative to the height of the viewport. As the viewport height changes, elements sized with VH will adjust their size proportionally.
+Difference from PX (Pixels):
+Pixels (px) are an absolute unit of measurement in CSS that represents the actual pixel on a screen. Unlike VW and VH, pixels do not change relative to the viewport size. A pixel represents a fixed-size unit regardless of the screen or viewport dimensions.
+The key differences between VW/VH and PX are:
+1. Relative vs. Absolute: VW and VH are relative units that scale based on the size of the viewport, while pixels (PX) are absolute units that have a fixed size.
+2. Responsive Design: VW and VH are commonly used in responsive web design to create fluid layouts that adapt to different viewport sizes. Elements sized with VW and VH will automatically adjust their size as the viewport changes. Pixels, on the other hand, do not respond to changes in viewport size without explicit adjustments.
+In summary, VW and VH are relative units that allow you to size elements based on the width and height of the viewport, respectively. They provide a flexible and responsive approach to designing web pages that adapt to different screen sizes. Pixels (PX), on the other hand, represent a fixed-size unit and do not change based on the viewport size.

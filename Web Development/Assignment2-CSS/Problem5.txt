@@ -1,0 +1,14 @@
+Q.5 How is Border-box different from Content Box?
+Ans: 
+The difference between border-box and content-box lies in how the sizing of an element is calculated, particularly when it comes to the width and height properties. Here's a summary of their distinctions:
+A. content-box:
+    1· The default box-sizing property value is content-box.
+    2· With content-box, the width and height properties only include the content of an element.
+    3· When you apply padding or borders to an element with content-box, the specified width and height values do not account for these additions. Instead, the padding and border dimensions are added to the overall width and height, potentially causing the element to overflow its container.
+
+B. border-box:
+    1· When using border-box, the width and height properties include both the content, padding, and borders of an element.
+    2· With border-box, the specified width and height values represent the total space that the element will occupy, regardless of any padding or border added.
+    3· This box model is often favored for its simplicity and convenience in layout calculations, as it allows you to set fixed dimensions for an element while incorporating padding and border widths without causing overflow.
+
+In summary, the primary distinction between border-box and content-box is how the width and height properties are calculated. content-box includes only the content, while border-box incorporates the content, padding, and border dimensions within the specified width and height values.
