@@ -1,0 +1,11 @@
+Q.9 What’s the difference between html tag and attribute and give example of some global attributes?
+Ans: 
+In HTML, the terms "tag" and "attribute" refer to different concepts:
+HTML Tag:An HTML tag is a markup element that defines the structure and formatting of content within an HTML document. Tags are enclosed in angle brackets and come in pairs: an opening tag and a closing tag. The opening tag denotes the start of an element, and the closing tag denotes its end. For example, <p> is an opening tag for a paragraph, and </p> is the corresponding closing tag.
+
+HTML Attribute:An HTML attribute provides additional information about an HTML element. Attributes are applied within the opening tag of an element and modify the behavior or appearance of that element. Attributes consist of a name-value pair, where the name specifies the attribute, and the value provides the specific value for that attribute. Attributes are used to enhance the functionality, accessibility, or styling of HTML elements. Examples of common HTML attributes include src, href, alt, class, and id.
+Here are some examples of global attributes, which can be used with any HTML element:
+1.class
+2.id
+3.title
+4.style

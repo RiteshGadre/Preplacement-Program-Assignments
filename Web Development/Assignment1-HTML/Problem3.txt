@@ -1,0 +1,17 @@
+Q.3 Differentiate between HTML Tags and Elements?
+Ans: 
+
+HTML Tags
+HTML tags are used to define the structure and presentation of content in an HTML document.
+Tags mark the beginning and end of an HTML element.
+Tags are enclosed within angle brackets (< and >).
+Examples of HTML tags include <div>, <p>, <h1>, <img>, etc.
+HTML tags alone do not carry any content; they define the boundaries of HTML elements.
+
+HTML Elements
+HTML elements consist of HTML tags along with the content they enclose.
+Elements define the structure and semantics of the content.
+Elements consist of the opening tag, content, and closing tag.
+Examples of HTML elements include <div>Hello World!</div>, <p>This is a paragraph.</p>, <h1>Heading</h1>, <img src="image.jpg" alt="Image">, etc.
+HTML elements include tags along with the actual content they surround, such as text, images, or nested elements.
+
