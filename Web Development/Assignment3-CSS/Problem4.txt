@@ -1,0 +1,8 @@
+Q.4 What is the purpose of using Media Queries for Print Media?
+Ans:
+The purpose of using media queries for print media is to create styles specifically tailored for printing web content. When users choose to print a webpage, it often requires a different layout, formatting, and styling compared to its on-screen presentation. Media queries allow you to define CSS rules that will be applied only when the content is being printed.
+
+Here are a few key purposes of using media queries for print media:
+1. Optimize for Paper: Printing a webpage involves different considerations, such as optimizing the layout for paper size and orientation. Media queries enable you to define specific styles that ensure the content fits properly within the printed page, adjusting margins, font sizes, and other elements as necessary.
+2. Remove Irrelevant Elements: When printing, certain elements like navigation menus, advertisements, or interactive features might not be necessary or desirable. Media queries allow you to selectively hide or modify these elements so that the printed version focuses on the core content and improves readability.
+3. Enhance Readability: Print media queries enable you to adjust typography, line spacing, and other styles to enhance the readability of the printed content. This may involve increasing font sizes, adjusting line heights, or choosing print-friendly fonts that work well on paper.

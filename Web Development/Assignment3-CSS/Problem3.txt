@@ -1,0 +1,26 @@
+Q.3 Explain the concept of Breakpoints in Responsive Web Design and How They are used in Media Queries.
+Ans: 
+In the context of responsive web design, breakpoints refer to specific points or ranges of viewport widths at which the layout of a webpage or application should change to accommodate different screen sizes. These breakpoints are defined in media queries to create responsive designs that adapt to various devices and screen resolutions.
+Breakpoints are crucial in responsive web design as they allow you to adjust the layout, styling, and content of your webpage to provide an optimal viewing experience for users across different devices, such as desktops, tablets, and smartphones. By defining breakpoints and using them in media queries, you can apply different CSS rules and modify the design as the viewport width changes.
+Here's an example of using breakpoints in media queries:
+/* CSS rules for desktop screens */
+.container {
+  width: 1200px;
+  /* other styles */
+}
+
+/* CSS rules for tablets */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 800px;
+    /* other styles */
+  }
+}
+
+/* CSS rules for mobile devices */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    /* other styles */
+  }
+}
