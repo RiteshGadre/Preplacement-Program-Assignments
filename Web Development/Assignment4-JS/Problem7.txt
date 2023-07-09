@@ -1,0 +1,12 @@
+Q.7 What’s difference between map & forEach?
+Ans:
+The map() and forEach() methods are both used to iterate through arrays in JavaScript. However, there are some key differences between the two methods.
+map()
+- Returns a new array with the results of the callback function applied to each element of the original array.
+- The callback function takes two arguments: the current element of the array and the index of the element.
+- The callback function can return any value, including a primitive value, an object, or even another array.
+
+forEach()
+- Does not return anything.
+- The callback function takes one argument: the current element of the array.
+- The callback function cannot return anything.

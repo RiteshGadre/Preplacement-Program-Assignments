@@ -1,0 +1,18 @@
+Q.1 Explain Hoisting in JavaScript.
+Ans:
+Hoisting is a JavaScript concept that allows us to use variables and functions before they are declared. This is because the JavaScript interpreter hoists, or moves, all variable and function declarations to the top of their scope before execution.
+There are two types of hoisting:
+1. Variable Hoisting: Variable hoisting moves the declaration of a variable to the top of its scope, even if the variable is declared later in the code. This means that you can use a variable before it is declared, but the value of the variable will be undefined until it is assigned a value.
+Example:
+// Variable hoisting
+var foo;
+console.log(foo); // undefined
+foo = 'bar';
+
+2. Function hoisting: Function hoisting moves the declaration of a function to the top of its scope, even if the function is declared later in the code. This means that you can call a function before it is declared, but the function will not actually be executed until it is declared.
+Example:
+// Function hoisting
+function bar() {
+  console.log('bar');
+}
+bar(); // bar

@@ -1,0 +1,7 @@
+Q.6  What is template literals in ES6 and how do you use them?
+Ans:
+Template literals are a new feature introduced in ECMAScript 2015 (ES6). They provide a simple way to create multiline strings and perform string interpolation. Template literals are enclosed by backticks () characters, instead of double or single quotes.
+Example:
+const name = 'John Doe';
+const age = 30;
+const greeting = `Hello, ${name}! You are ${age} years old.`;

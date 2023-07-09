@@ -1,0 +1,14 @@
+Q.4 What are the major features introduced in ECMAScript 6?
+Ans: 
+Following are some of the key features introduced in ECMAScript 6:
+1. Block-scoped variables: The let and const keywords allow for block-scoped variable declarations, providing an alternative to the function-scoped var keyword.
+2. Arrow functions: Arrow functions provide a concise syntax for writing function expressions, with implicit `this` binding and simplified syntax for one-line functions.
+3. Classes: ES6 introduced a class syntax for creating objects and constructor functions, providing a more familiar and structured approach to object-oriented programming in JavaScript.
+4. Template literals: Template literals allow for more expressive string interpolation by using backticks (`) instead of quotes, supporting multiline strings and embedded expressions.
+5. Destructuring assignment: Destructuring assignment provides an elegant way to extract values from arrays or objects into individual variables, simplifying variable assignment and function parameter handling.
+6. Default parameters: ES6 allows function parameters to have default values, reducing the need for manual parameter checking and providing fallback values when arguments are omitted.
+7. Spread syntax: The spread syntax (...) allows for the expansion of elements in arrays, object literals, and function arguments, making it easier to work with iterable data structures.
+8. Modules: ES6 introduced a standardized module system for JavaScript, enabling the creation of reusable modules with explicit imports and exports, improving code organization and encapsulation.
+9. Promises: Promises provide a more robust and standardized way to handle asynchronous operations, simplifying the handling of asynchronous tasks and avoiding "callback hell."
+10. Enhanced object literals: Object literals gained new syntax features in ES6, such as shorthand property and method definitions, computed property names, and the ability to define getters and setters.
+11. Iterators and generators: ES6 introduced new iterator and generator protocols, enabling custom iteration behavior and simplifying the creation of iterable objects.

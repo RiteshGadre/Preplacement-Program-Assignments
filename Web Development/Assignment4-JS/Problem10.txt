@@ -1,0 +1,30 @@
+Q.10 What is the purpose of the spread operator (...) in ES6?
+Ans:
+The spread operator (...) in ES6 is used to expand the elements of an iterable object into individual elements. This can be useful for a variety of tasks, such as copying arrays, merging objects, and calling functions with multiple arguments.
+Here are some examples of how the spread operator can be used:
+Copying arrays: The spread operator can be used to copy the elements of an array into a new array. For example, the following code copies the elements of the numbers array into a new array called newNumbers:
+JavaScript code:
+const numbers = [1, 2, 3, 4, 5];
+const newNumbers = [...numbers];
+Use code with caution. Learn more
+Merging objects: The spread operator can be used to merge the properties of two objects into a new object. For example, the following code merges the properties of the person1 and person2 objects into a new object called person:
+JavaScript code:
+const person1 = {
+  name: 'John Doe',
+  age: 30,
+};
+
+const person2 = {
+  occupation: 'Software Engineer',
+};
+
+const person = { ...person1, ...person2 };
+Use code with caution. Learn more
+Calling functions with multiple arguments: The spread operator can be used to call a function with multiple arguments that are already defined in an iterable object. For example, the following code calls the logNumbers() function with the elements of the numbers array:
+JavaScript
+function logNumbers(...numbers) {
+  console.log(numbers);
+}
+logNumbers([1, 2, 3, 4, 5]);
+Use code with caution. Learn more
+The spread operator is a powerful tool that can be used to simplify and improve the readability of your code. It is a good practice to use the spread operator whenever possible.

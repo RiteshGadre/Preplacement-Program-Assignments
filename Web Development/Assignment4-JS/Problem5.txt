@@ -1,0 +1,12 @@
+Q.5 What is the difference between let and const ?
+Ans: 
+Here is the difference between let and const:
+let:
+- Allows variable reassignment: Variables declared with let can be reassigned new values after their initial declaration.
+- Block-scoped: let variables are limited to the block in which they are defined (such as within loops or if statements).
+- No hoisting: let variables are not hoisted, meaning they cannot be accessed before their declaration in the code.
+
+const:
+- Does not allow reassignment: Variables declared with const are constants and cannot be reassigned once they are defined. The initial value assigned to a const variable is fixed.
+- Block-scoped: const variables are limited to the block in which they are defined.
+- No hoisting: const variables are not hoisted and cannot be accessed before their declaration.

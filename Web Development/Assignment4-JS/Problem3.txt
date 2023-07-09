@@ -1,0 +1,17 @@
+Q.3 Difference between var & let?
+Ans: 
+Here is the differences between var and let in JavaScript:
+
+var:
+- Function-scoped: Variables are accessible within the entire function in which they are declared.
+- Hoisting: Variable declarations are hoisted to the top of their scope, allowing access before they are declared (although their value will be `undefined`).
+- Can be redeclared: Variables can be redeclared within the same scope without generating an error.
+- Can be reassigned: The value of a `var` variable can be changed.
+
+let:
+- Block-scoped: Variables are limited to the block in which they are defined (such as within loops or if statements).
+- No hoisting: Variable declarations are not hoisted, and trying to access them before their declaration results in an error.
+- Cannot be redeclared: Variables declared with `let` cannot be redeclared within the same scope.
+- Can be reassigned: The value of a `let` variable can be changed.
+
+In summary, let provides block scoping, avoids hoisting-related issues, and enforces stricter variable declaration rules compared to var.
