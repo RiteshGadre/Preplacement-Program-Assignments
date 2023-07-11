@@ -1,0 +1,50 @@
+Q.5 What are Callbacks &  Callback Hell ?
+Ans:
+Callbacks are functions that are passed as arguments to other functions and are intended to be invoked at a later time, usually when an asynchronous operation completes. They allow you to specify what should happen after an asynchronous task finishes executing.
+
+Here's a simple example that demonstrates the usage of callbacks:
+
+javascript
+function fetchData(callback) {
+  setTimeout(() => {
+    const data = "Some fetched data";
+    callback(data);
+  }, 2000);
+}
+
+function handleData(data) {
+  console.log("Data received:", data);
+}
+
+fetchData(handleData);
+
+In this example, the `fetchData` function accepts a callback function as an argument. After a simulated asynchronous operation (in this case, a `setTimeout`), it invokes the callback function, passing the fetched data as an argument. The `handleData` function is provided as the callback and is responsible for handling the received data.
+
+Callback Hell, also known as the Pyramid of Doom, is a situation that arises when dealing with multiple asynchronous operations that depend on each other, leading to deeply nested and difficult-to-read code. It occurs when callbacks are chained within callbacks, creating a visually complex and error-prone code structure.
+
+Here's an example of callback hell:
+
+javascript
+asyncFunc1(function (error, result1) {
+  if (error) {
+    console.error("Error occurred:", error);
+  } else {
+    asyncFunc2(result1, function (error, result2) {
+      if (error) {
+        console.error("Error occurred:", error);
+      } else {
+        asyncFunc3(result2, function (error, result3) {
+          if (error) {
+            console.error("Error occurred:", error);
+          } else {
+            // More nested callbacks...
+          }
+        });
+      }
+    });
+  }
+});
+
+In this code snippet, each asynchronous function (`asyncFunc1`, `asyncFunc2`, `asyncFunc3`, etc.) takes a callback function as an argument. Asynchronous operations are nested within each other, leading to an indentation pattern that can become difficult to follow and maintain.
+
+Callback hell makes code harder to read, understand, and debug. It also makes error handling and code reuse more challenging. To alleviate this issue, developers have adopted alternative approaches like Promises and async/await, which provide more structured and readable ways to handle asynchronous code.

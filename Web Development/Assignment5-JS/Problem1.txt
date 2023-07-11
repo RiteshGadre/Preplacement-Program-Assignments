@@ -1,0 +1,14 @@
+Q.1 What’s difference between Synchronous and Asynchronous?
+Ans:
+Synchronous Programming:
+- Tasks are executed one after the other in a sequential manner.
+- The program waits for a task to complete before moving on to the next task.
+- Execution is blocking, meaning that other tasks have to wait for the current task to finish.
+- The program follows a predictable and linear flow.
+
+Asynchronous Programming:
+- Tasks are initiated but don't block the program's execution.
+- The program can continue executing other tasks without waiting for the completion of a specific task.
+- Execution is non-blocking, allowing concurrent execution of multiple tasks.
+- Callback functions, promises, or async/await are used to handle the results or errors of asynchronous tasks.
+- The program flow may not follow a strict linear sequence, as tasks may complete in different orders.

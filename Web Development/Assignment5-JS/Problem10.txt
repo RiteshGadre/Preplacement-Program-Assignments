@@ -1,0 +1,20 @@
+Q.10 How do you define an asynchronous function in JavaScript using async/await?
+Ans:
+To define an asynchronous function using async/await in JavaScript, you use the async keyword before the function declaration. This marks the function as asynchronous, allowing you to use the await keyword inside the function body to pause the execution and wait for promises to resolve.
+Here's the syntax for defining an asynchronous function with async/await:
+javascript code:
+async function functionName() {
+  // Asynchronous code using await
+}
+
+
+Here's an example of an asynchronous function that uses async/await to handle a promise:
+
+javascript code:
+async function fetchData() {
+  const response = await fetch('https://api.example.com/data');
+  const data = await response.json();
+  return data;
+}
+In this example, the fetchData function is defined as an asynchronous function using the async keyword. Inside the function, the await keyword is used to pause the execution and wait for the fetch request to complete and the response to be resolved using the response.json() method. The resolved JSON data is then returned from the function.
+The async keyword in conjunction with await provides a more sequential and readable way to write asynchronous code, making it resemble synchronous code. It simplifies handling promises and allows for easier error handling within the async function using try-catch blocks.

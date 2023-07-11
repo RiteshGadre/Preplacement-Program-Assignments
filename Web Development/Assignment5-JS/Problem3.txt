@@ -1,0 +1,24 @@
+Q.3 Explain SetTimeOut and setInterval ?
+Ans: 
+1. setTimeout: The setTimeout function allows you to execute a specified function or a code snippet once after a designated delay. It takes two arguments: a callback function and a delay time in milliseconds. After the specified delay, the callback function is executed.
+Here's an example that demonstrates the usage of setTimeout:
+Code:
+setTimeout(() => {
+  console.log("This message will be displayed after 2 seconds.");
+}, 2000);
+In the above code, the callback function inside setTimeout will be executed after a delay of 2000 milliseconds (2 seconds). It's important to note that the delay is not guaranteed to be exact. The browser will attempt to execute the callback as close to the specified delay as possible, but other tasks and browser performance can affect the exact timing.
+
+2. setInterval: The setInterval function is similar to setTimeout, but it repeatedly executes a function or code snippet at a specified interval. It also takes a callback function and a delay time as arguments.
+Here's an example that demonstrates the usage of setInterval:
+
+javascript
+Copy code
+let counter = 0;
+const intervalId = setInterval(() => {
+  console.log("Interval message:", counter);
+  counter++;
+
+  if (counter === 5) {
+    clearInterval(intervalId); // Stop the interval after 5 iterations
+  }
+}, 1000);

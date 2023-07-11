@@ -1,0 +1,15 @@
+Q.8 Explain Purpose of Try and Catch Block & Why do we need it?
+Ans:
+The purpose of the try-catch block in JavaScript is to handle and manage exceptions, or errors, that may occur during the execution of a code block. It provides a mechanism to gracefully handle errors and prevent them from causing the program to terminate abruptly.
+Here's how the try-catch block works:
+1. The code that might generate an error is placed inside the try block.
+2. If an error occurs within the try block, the execution is immediately transferred to the corresponding catch block.
+3. The catch block contains the error-handling code, where you can define how to handle or respond to the specific error.
+4. After executing the catch block, the program continues executing the code that follows the catch block.
+
+The try-catch block is essential for several reasons:
+1. Error Handling: It allows you to catch and handle exceptions that would otherwise cause the program to crash. You can define appropriate error handling logic to gracefully recover from errors or provide meaningful feedback to users.
+2. Program Flow Control: The try-catch block helps in controlling the flow of the program when an error occurs. It provides a way to branch the execution path based on whether an error occurs or not.
+3. Debugging and Logging: With the catch block, you can log or output detailed error information, such as the error message and stack trace. This is crucial for diagnosing and debugging issues during development or when monitoring the application in production.
+4. Preventing Unhandled Exceptions: By wrapping code in a try-catch block, you ensure that exceptions are caught and handled properly. If exceptions are left unhandled, they can lead to unexpected behavior, crashes, or undesired application states.
+By using try-catch blocks, you can create more robust and reliable code by handling and recovering from errors in a controlled manner. It helps to ensure the stability and resilience of the application by providing a structured approach to exception handling.

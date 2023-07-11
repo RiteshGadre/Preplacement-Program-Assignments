@@ -1,0 +1,25 @@
+Q.4 how can you handle Async code in JavaScript ?
+Ans: 
+Async/await is a modern syntax introduced in ECMAScript 2017 (ES8) that provides a more concise and synchronous-looking way to handle asynchronous code. It is built on top of Promises and makes asynchronous code appear more like synchronous code.
+javascript
+Copy code
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const data = "Some fetched data";
+      resolve(data);
+    }, 2000);
+  });
+}
+
+async function getData() {
+  try {
+    const data = await fetchData();
+    console.log("Data received:", data);
+  } catch (error) {
+    console.error("Error occurred:", error);
+  }
+}
+
+getData();
+In this example, the fetchData function returns a Promise as before. The getData function is defined as an async function, which allows the use of the await keyword to pause the execution until the Promise is resolved. The code appears sequential and easier to read. Any errors during the asynchronous operation can be caught using a try-catch block.
