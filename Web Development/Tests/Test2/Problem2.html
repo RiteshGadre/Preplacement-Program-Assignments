@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #inputBox {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="inputBox" placeholder="Type something...">
+  <button id="submitBtn">Submit</button>
+  <ul id="list"></ul>
+
+  <script>
+    const inputBox = document.getElementById('inputBox');
+    const submitBtn = document.getElementById('submitBtn');
+    const list = document.getElementById('list');
+
+    submitBtn.addEventListener('click', function() {
+      const userInput = inputBox.value.trim();
+
+      if (userInput !== '') {
+        const listItem = document.createElement('li');
+        listItem.textContent = userInput;
+        list.appendChild(listItem);
+        inputBox.value = '';
+      }
+    });
+  </script>
+</body>
+</html>

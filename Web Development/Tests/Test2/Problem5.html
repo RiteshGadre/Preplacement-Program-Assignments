@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <span id="nameError" class="error"></span>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <span id="emailError" class="error"></span>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" required pattern="[0-9]{10}">
+    <span id="phoneError" class="error"></span>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <span id="passwordError" class="error"></span>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" required min="1" max="120">
+    <span id="ageError" class="error"></span>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" required>
+      <option value="">Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <span id="genderError" class="error"></span>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" required>
+    <span id="dobError" class="error"></span>
+
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" required>
+    <span id="colorError" class="error"></span>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('myForm');
+    const nameField = document.getElementById('name');
+    const emailField = document.getElementById('email');
+    const phoneField = document.getElementById('phone');
+    const passwordField = document.getElementById('password');
+    const ageField = document.getElementById('age');
+    const genderField = document.getElementById('gender');
+    const dobField = document.getElementById('dob');
+    const colorField = document.getElementById('color');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      if (!validateName()) {
+        showError('name', 'Please enter a valid name');
+      } else {
+        clearError('name');
+      }
+
+      if (!validateEmail()) {
+        showError('email', 'Please enter a valid email address');
+      } else {
+        clearError('email');
+      }
+
+      if (!validatePhone()) {
+        showError('phone', 'Please enter a valid phone number (10 digits)');
+      } else {
+        clearError('phone');
+      }
+
+      if (!validatePassword()) {
+        showError('password', 'Password must be at least 6 characters');
+      } else {
+        clearError('password');
+      }
+
+      if (!validateAge()) {
+        showError('age', 'Please enter a valid age (1-120)');
+      } else {
+        clearError('age');
+      }
+
+      if (!validateGender()) {
+        showError('gender', 'Please select a valid gender');
+      } else {
+        clearError('gender');
+      }
+
+      if (!validateDOB()) {
+        showError('dob', 'Please enter a valid date of birth');
+      } else {
+        clearError('dob');
+      }
+
+      if (!validateColor()) {
+        showError('color', 'Please select a valid color');
+      } else {
+        clearError('color');
+      }
+    });
+
+    function validateName() {
+      const nameRegex = /^[a-zA-Z\s]+$/;
+      return nameRegex.test(nameField.value);
+    }
+
+    function validateEmail() {
+      const emailRegex = /^\S+@\S+\.\S+$/;
+      return emailRegex.test(emailField.value);
+    }
+
+    function validatePhone() {
+      const phoneRegex = /^\d{10}$/;
+      return phoneRegex.test(phoneField.value);
+    }
+
+    function validatePassword() {
+      return passwordField.value.length >= 6;
+    }
+
+    function validateAge() {
+      return ageField.value >= 1 && ageField.value <= 120;
+    }
+
+    function validateGender() {
+      return genderField.value !== '';
+    }
+
+    function validateDOB() {
+      const currentDate = new Date().toISOString().split('T')[0];
+      return dobField.value <= currentDate;
+    }
+
+    function validateColor() {
+      return colorField.value !== '';
+    }
+
+    function showError(field, message) {
+      const errorElement = document.getElementById(`${field}Error`);
+      errorElement.textContent = message;
+    }
+
+    function clearError(field) {
+      const errorElement = document.getElementById(`${field}Error`);
+      errorElement.textContent = '';
+    }
+  </script>
+</body>
+</html>

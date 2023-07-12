@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .navbar {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    .navbar-items {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar-item {
+      margin: 5px 0;
+    }
+
+    .navbar-toggle {
+      display: none;
+      cursor: pointer;
+    }
+
+    /* Media Query for smaller screens */
+    @media screen and (max-width: 768px) {
+      .navbar-items {
+        display: none;
+        padding: 10px;
+      }
+
+      .navbar-toggle {
+        display: block;
+      }
+
+      .collapsed {
+        display: none;
+      }
+
+      .expanded {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">My Website</div>
+    <div class="navbar-items expanded">
+      <a class="navbar-item" href="#">Home</a>
+      <a class="navbar-item" href="#">About</a>
+      <a class="navbar-item" href="#">Services</a>
+      <a class="navbar-item" href="#">Contact</a>
+    </div>
+    <div class="navbar-toggle">
+      <div class="collapsed">&#9776;</div>
+      <div class="expanded">&times;</div>
+    </div>
+  </nav>
+
+  <script>
+    const navbarItems = document.querySelector('.navbar-items');
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const collapsedToggle = document.querySelector('.collapsed');
+    const expandedToggle = document.querySelector('.expanded');
+
+    navbarToggle.addEventListener('click', function() {
+      navbarItems.classList.toggle('expanded');
+      collapsedToggle.style.display = (collapsedToggle.style.display === 'none') ? 'block' : 'none';
+      expandedToggle.style.display = (expandedToggle.style.display === 'none') ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
