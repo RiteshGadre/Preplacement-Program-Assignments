@@ -1,0 +1,8 @@
+Q.1 What’s Constructor And Its Purpose?
+Ans:
+A constructor is a special method in an object-oriented programming language that is used to initialize and create objects of a class. It is typically called when an object is created using the "new" keyword.
+The purpose of a constructor is to set the initial state or properties of an object and perform any necessary setup or initialization tasks. It allows you to define what happens when an object is created and provides a way to ensure that the object is properly initialized with the desired values.
+Constructors are often used to assign initial values to the instance variables or properties of an object, and they may also perform additional tasks such as allocating memory, setting up connections, or initializing other objects that the current object depends on.
+In JavaScript, constructors are defined using a special function with the same name as the class or object being created. For example, in a JavaScript class, the constructor is defined using the constructor() method.
+The constructor plays a crucial role in object-oriented programming as it allows you to create and initialize objects with the required state and behavior before they are used in the program.
+Overall, the purpose of a constructor is to ensure that objects are properly initialized and ready for use, setting them up with the necessary initial state and behavior.
