@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --container-bg-color: #515FB5;
+    --success-color: #008000;
+    --failure-color: #ff0000;
+    --button-bgcolor: #41E5ED;
+    --main-container-bg-color: #1C1A5E;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-container{
+    background-color: var(--container-bg-color);
+    width: 100%;
+    align-self: center;
+}
+
+.main-container{
+    background-color: var(--main-container-bg-color);
+
+}
